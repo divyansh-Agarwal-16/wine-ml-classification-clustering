@@ -1,0 +1,43 @@
+{
+  "dataset": {
+    "name": "UCI Wine Recognition Dataset",
+    "n_samples": 178,
+    "n_features": 13,
+    "classes": [
+      "class_0",
+      "class_1",
+      "class_2"
+    ],
+    "class_counts": {
+      "class_0": 59,
+      "class_1": 71,
+      "class_2": 48
+    }
+  },
+  "classification": {
+    "SVM": {
+      "accuracy": 0.9814814814814815,
+      "kappa": 0.971875,
+      "roc_auc": 1.0
+    },
+    "kNN": {
+      "accuracy": 0.9444444444444444,
+      "kappa": 0.9166666666666666,
+      "roc_auc": 0.9953157953157953
+    }
+  },
+  "clustering": {
+    "KMeans": {
+      "sse": 1277.9284888446423,
+      "entropy": 0.18983117265865995,
+      "silhouette": 0.2848589191898987
+    },
+    "DBSCAN": {
+      "sse": 965.6932010649025,
+      "entropy": 0.8057312776930657,
+      "silhouette": 0.07254840800799305,
+      "n_clusters": 3,
+      "n_noise": 44
+    }
+  }
+}
